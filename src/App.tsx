@@ -1,23 +1,42 @@
+import "devextreme/dist/css/dx.common.css";
+import "./themes/generated/theme.base.css";
+import "./themes/generated/theme.additional.css";
 import React from "react";
-import "./App.css";
-import { useSelector, useDispatch } from "react-redux";
-import { allActions } from "./Redux/actions/index";
+import { HashRouter as Router } from "react-router-dom";
+import "./dx-styles.scss";
+import LoadPanel from "devextreme-react/load-panel";
+import { NavigationProvider } from "./contexts/navigation";
+import { AuthProvider, useAuth } from "./contexts/auth";
+import { useScreenSizeClass } from "./utils/media-query";
+import Content from "./Content";
+import NotAuthenticatedContent from "./NotAuthenticatedContent";
 
-const App = () => {
-    const counter = useSelector<any>((state) => state.counter);
-    const isLogged = useSelector<any>((state) => state.isLogged);
-    const dispatch = useDispatch();
+function App() {
+    const { user, loading } = useAuth() as any;
+
+    if (loading) {
+        return <LoadPanel visible={true} />;
+    }
+
+    if (user) {
+        return <Content />;
+    }
+
+    return <NotAuthenticatedContent />;
+}
+
+export default function () {
+    const screenSizeClass = useScreenSizeClass();
 
     return (
-        <div className="App">
-            <button onClick={() => dispatch(allActions.signIn())}>
-                {/* User is logged: {isLogged.toString()} */}
-            </button>
-            <button onClick={() => dispatch(allActions.increment())}>+</button>
-            <button onClick={() => dispatch(allActions.decrement())}>-</button>
-            <div>{counter as any}</div>
-        </div>
+        <Router>
+            <AuthProvider>
+                <NavigationProvider>
+                    <div className={`app ${screenSizeClass}`}>
+                        <App />
+                    </div>
+                </NavigationProvider>
+            </AuthProvider>
+        </Router>
     );
-};
-
-export default App;
+}
