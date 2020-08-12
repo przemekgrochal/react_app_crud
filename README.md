@@ -70,3 +70,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### PL // Jak korzystać z TypeScript w ReactJS ENG // How to use TypeScript in ReactJS
 
 https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#reacttypescript-cheatsheets
+
+### React Data Tables
+
+https://www.npmjs.com/package/react-data-table-component
+https://jbetancur.github.io/react-data-table-component/?path=/story/material-ui--override-default-components

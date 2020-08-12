@@ -1,7 +1,7 @@
 export class FetchData {
     public data: any = null;
 
-    fetch(urlApi: string, methods: string | undefined, bodyData: any | null) {
+    fetch(urlApi: string, methods: string, bodyData: string | null) {
         const download = async (urlApi: string) => {
             try {
                 const response = await fetch(urlApi, {

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "first_name": "Jan",
+        "last_name": "Kowalski",
+        "gender": "male",
+        "dob": "1967-06-14",
+        "email": "nhuels@example.com",
+        "phone": "630.319.8187 x00620",
+        "website": "http://johnson.net/vero-quidem-eius-ipsam-ea-quia-molestias",
+        "address": "2960 Keanu Terrace Apt. 453\nWest Mervin, OH 78231",
+        "status": "inactive"
+    },
+    {
+        "id": 2,
+        "first_name": "Anna",
+        "last_name": "Ryczek",
+        "gender": "female",
+        "dob": "1933-11-14",
+        "email": "ann@gmail.com",
+        "phone": "630.319.8187 x00620",
+        "website": "http://johnson.net/vero-quidem-eius-ipsam-ea-quia-molestias",
+        "address": "2960 Keanu Terrace Apt. 453\nWest Mervin, OH 78231",
+        "status": "inactive"
+    },
+    {
+        "id": 3,
+        "first_name": "Mateusz",
+        "last_name": "Zawadzki",
+        "gender": "male",
+        "dob": "1967-06-14",
+        "email": "nhuels@example.com",
+        "phone": "630.319.8187 x00620",
+        "website": "http://johnson.net/vero-quidem-eius-ipsam-ea-quia-molestias",
+        "address": "2960 Keanu Terrace Apt. 453\nWest Mervin, OH 78231",
+        "status": "inactive"
+    },
+    {
+        "id": 4,
+        "first_name": "Patryk",
+        "last_name": "Janik",
+        "gender": "male",
+        "dob": "1967-06-14",
+        "email": "nhuels@example.com",
+        "phone": "630.319.8187 x00620",
+        "website": "http://johnson.net/vero-quidem-eius-ipsam-ea-quia-molestias",
+        "address": "2960 Keanu Terrace Apt. 453\nWest Mervin, OH 78231",
+        "status": "inactive"
+    },
+    {
+        "id": 5,
+        "first_name": "Damian",
+        "last_name": "Adamski",
+        "gender": "male",
+        "dob": "1967-06-14",
+        "email": "nhuels@example.com",
+        "phone": "630.319.8187 x00620",
+        "website": "http://johnson.net/vero-quidem-eius-ipsam-ea-quia-molestias",
+        "address": "2960 Keanu Terrace Apt. 453\nWest Mervin, OH 78231",
+        "status": "inactive"
+    },
+    {
+        "id": 6,
+        "first_name": "Antoni",
+        "last_name": "Warzecha",
+        "gender": "male",
+        "dob": "1967-06-14",
+        "email": "nhuels@example.com",
+        "phone": "630.319.8187 x00620",
+        "website": "http://johnson.net/vero-quidem-eius-ipsam-ea-quia-molestias",
+        "address": "2960 Keanu Terrace Apt. 453\nWest Mervin, OH 78231",
+        "status": "inactive"
+    }
+]
