@@ -89,13 +89,11 @@ const Users = () => {
         setPopupVisible(false);
     };
 
-    const deleteUser = (userId: any) => {
-        // setCurrentUser(userId);
-        console.log(userId);
-        console.log(`${process.env.REACT_APP_API_URL}/users/${userId}`);
+    const deleteUser = (row: any) => {
+        window.document.getElementById(`row-${row.id}`)?.remove();
         dispatch(
             rootActions.usersActions.readUser({
-                urlApi: `${process.env.REACT_APP_API_URL}/users/${userId}`,
+                urlApi: `${process.env.REACT_APP_API_URL}/users/${row.id}`,
                 methods: 'DELETE',
                 headers: {
                     ['Content-Type']: 'application/json',
@@ -104,17 +102,6 @@ const Users = () => {
                 bodyData: null,
             })
         );
-
-        setDataInput({
-            id: 0,
-            create: false,
-            update: false,
-            name: '',
-            surname: '',
-            email: '',
-            gender: '',
-            status: '',
-        });
     };
 
     const handleChange = (e: any) => {
@@ -144,7 +131,7 @@ const Users = () => {
                         <Button
                             icon="trash"
                             onClick={() => {
-                                deleteUser(row.id);
+                                deleteUser(row);
                             }}
                         />
                         <Button icon="edit" onClick={(e) => console.log(row)} />
